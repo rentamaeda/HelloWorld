@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,24 +12,47 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Helloworld" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFZ-4s-9Cs">
-                                <rect key="frame" x="144" y="134" width="147" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZ1-0o-S6M" userLabel="top">
+                                <rect key="frame" x="20" y="100" width="335" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="BMr-of-Kg9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jM-Dh-DLK" userLabel="right">
+                                <rect key="frame" x="90" y="270" width="265" height="347"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Y4-On-E0q" userLabel="right">
+                                <rect key="frame" x="20" y="270" width="50" height="347"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="UYf-l0-4r8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kZ1-0o-S6M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="0T8-rq-yhL"/>
+                            <constraint firstItem="0jM-Dh-DLK" firstAttribute="leading" secondItem="2Y4-On-E0q" secondAttribute="trailing" constant="20" id="5Eh-wQ-iu7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Y4-On-E0q" secondAttribute="bottom" constant="50" id="Awm-Wc-Prj"/>
+                            <constraint firstItem="0jM-Dh-DLK" firstAttribute="bottom" secondItem="2Y4-On-E0q" secondAttribute="bottom" id="Q7u-DQ-XbO"/>
+                            <constraint firstItem="2Y4-On-E0q" firstAttribute="leading" secondItem="kZ1-0o-S6M" secondAttribute="leading" id="cVs-4Y-W9m"/>
+                            <constraint firstItem="0jM-Dh-DLK" firstAttribute="top" secondItem="2Y4-On-E0q" secondAttribute="top" id="eXe-nA-sWa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kZ1-0o-S6M" secondAttribute="trailing" constant="20" id="hes-Je-rRS"/>
+                            <constraint firstItem="2Y4-On-E0q" firstAttribute="top" secondItem="kZ1-0o-S6M" secondAttribute="bottom" constant="20" id="mnm-eZ-9Hs"/>
+                            <constraint firstItem="0jM-Dh-DLK" firstAttribute="trailing" secondItem="kZ1-0o-S6M" secondAttribute="trailing" id="nTJ-Ld-tCC"/>
+                            <constraint firstItem="kZ1-0o-S6M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xfb-Pu-Xl8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+            <point key="canvasLocation" x="-978.39999999999998" y="139.880059970015"/>
         </scene>
     </scenes>
 </document>
